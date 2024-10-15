@@ -5,7 +5,7 @@
 
 ## Convertir a formato plink (recode 12) admisible y reconocible para admixture 
 ```
-plink --vcf archivo1.vcf --recode 12 --out archivo2-ADMX --allow-extra-chr
+plink --vcf Spheniscus.vcf --recode 12 --out archivo2-ADMX --allow-extra-chr
 ```
 
 
