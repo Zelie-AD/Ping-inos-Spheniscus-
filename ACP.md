@@ -68,6 +68,6 @@ p3 <- ggplot (Vec, aes(x= PCA2, y= PCA3, color = Classification))+
 
 p4 <- p3 + scale_colour_gradient(low = c("#CA3F3F","#64AD3F","#E8B547")) #creación de un gradiente de color para representar las especies
 ```
+![PCA](https://github.com/user-attachments/assets/766538c6-e644-404f-9c38-7f50c65c6c22)
 
-![image](C:\Users\zadze\Desktop\PCA.png)
 
