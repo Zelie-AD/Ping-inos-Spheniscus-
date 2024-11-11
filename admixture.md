@@ -4,15 +4,22 @@
 
 Intentaremos visualizar la Admixture (mezcla genética) de nuestros datos, es decir graficar las recombinaciones genéticas dentro de grupo y a lo largo de varias generaciones.
 
+## Instalación de los packages necesarios
+
+```bash
+conda install -c bioconda plink
+conda install -c bioconda admixture
+```
+
 ## Convertimos los datos para la admixture
 ```
 plink --vcf Spheniscus.vcf --recode 12 --out archivo2-ADMX --allow-extra-chr # convertir a formato plink (recode 12) admisible y reconocible para admixture 
 ```
 
-
 ## Se estima cuales están bajo desequilibrio de ligamiento para hacer el primer paso de Pruning (poda)
 ```
 plink --file archivo2-ADMX --indep-pairwise 50 5 0.1 --allow-extra-chr #cualquier SNP que se correlacione con un r de 0.1 o mayor será eliminado
+#-allow-extra-chr permite el uso de cromosomas adicionales en comparación a el número de cromosomas de humanos
 ```
 
 ## Se extraen los snps que no presentan desequilibrio de ligamiento.  para hacer el secundo paso de Pruning 
