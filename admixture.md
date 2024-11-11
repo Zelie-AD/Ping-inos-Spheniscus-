@@ -41,6 +41,6 @@ http://pophelper.com/
 Con esto, podemos visualisar los resultados de Admixture y eligir varias opciones gráficas como las colores, las leyendas de los Barplots, el ordenamiento de las poblaciones...
 El gráfico obtenido es el siguiente:
 
-
+![Capture d'écran 2024-11-11 032404](https://github.com/user-attachments/assets/3fc56ff7-622d-48cd-b9d1-5333c116fe9b)
 
 
